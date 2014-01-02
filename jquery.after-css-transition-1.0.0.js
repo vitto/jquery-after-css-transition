@@ -1,30 +1,28 @@
 var transitionEnd = "webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend";
 
 $.fn.addClassAfter = function(className) {
-	var that = this;
+	var $this = this;
 	setTimeout(function(){
-		that.addClass(className);
+		$this.addClass(className);
 	},1);
 };
 $.fn.addClassAfterTransition = function(className) {
-	var that, transitionEnd;
-	that = this;
-	that.bind(transitionEnd, function() {
+	this.bind(transitionEnd, function() {
 		$(this).addClass(className);
 		$(this).unbind(transitionEnd);
 	});
+	return this;
 };
 $.fn.removeClassAfter = function(className) {
-	var that = this;
+	var $this = this;
 	setTimeout(function(){
-		that.removeClass(className);
+		$this.removeClass(className);
 	},1);
 };
 $.fn.removeClassAfterTransition = function(className) {
-	var that, transitionEnd;
-	that = this;
-	that.bind(transitionEnd, function() {
+	this.bind(transitionEnd, function() {
 		$(this).removeClass(className);
 		$(this).unbind(transitionEnd);
 	});
+	return this;
 };
