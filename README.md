@@ -1,7 +1,7 @@
 jquery-after-css-transition
 ===========================
 
-A simple jQuery plugin that help to append classes **after CSS transitions** or **after another CSS class**.
+A simple jQuery plugin that help to append CSS classes **after CSS transitions** or **after another CSS class**.
 
 You can try it on [JSFiddle](http://jsfiddle.net/tonino/A9epx/) or view the code below:
 
