@@ -5,7 +5,7 @@ A simple jQuery plugin that help to append CSS classes **after CSS transitions**
 
 You can try it on [JSFiddle](http://jsfiddle.net/tonino/A9epx/) or view the code below:
 
-####CSS code
+#### CSS code
 
 ```
 #dropdown {
@@ -20,7 +20,7 @@ You can try it on [JSFiddle](http://jsfiddle.net/tonino/A9epx/) or view the code
 }
 ```
 
-####jQuery code
+#### jQuery code
 
 ```
 $(function() {
